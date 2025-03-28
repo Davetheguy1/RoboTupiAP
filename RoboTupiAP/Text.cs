@@ -14,9 +14,23 @@ namespace RoboTupiAP
             Console.WriteLine("---------------------");
             Console.WriteLine("Tupiniquim I");
             Console.WriteLine("---------------------\n\n");
-            Console.WriteLine("1.Expediçãon\n2.Sair");
+            Console.WriteLine("1.Expedição\n2.Sair");
         }
 
+        public static void GridMsg()
+        {
+            Console.WriteLine("Insira O Tamanho do Grid (x,y)");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public static void ExitMsg()
         {
             Console.WriteLine("Saindo do Programa...");
