@@ -1,21 +1,21 @@
 # RoboTupiAP
-## Descrição
-Uma simulação em que o usuário pode movimentar dois robôs em um grid determinado pelo usuário, feito para a Academia do Programador.
+## DescriÃ§Ã£o
+Uma simulaÃ§Ã£o em que o usuÃ¡rio pode movimentar dois robÃ´s em um grid determinado pelo usuÃ¡rio, feito para a Academia do Programador.
 ## Funcionalidade
-Após a determinação do grid, o usuário poderá "soltar" o primeiro robô em uma posição específica (consultar na aba "Como Usar") com uma string de comandos, após isso, ele poderá utilizar-se de outra string de comando para execultar uma série de outros movimentos dentro do plano(consultar na aba "Como Usar"). A Utilização dos robôs ocorre de forma sequencial, ou seja, apenas após as duas strings de comandos do primeiro robô serem escritas e validas é que o segundo robô será ativado e poderá execultar suas strings de comando.
+ApÃ³s a determinaÃ§Ã£o do grid, o usuÃ¡rio poderÃ¡ "soltar" o primeiro robÃ´ em uma posiÃ§Ã£o especÃ­fica (consultar na aba "Como Usar") com uma string de comandos, apÃ³s isso, ele poderÃ¡ utilizar-se de outra string de comando para execultar uma sÃ©rie de outros movimentos dentro do plano(consultar na aba "Como Usar"). A UtilizaÃ§Ã£o dos robÃ´s ocorre de forma sequencial, ou seja, apenas apÃ³s as duas strings de comandos do primeiro robÃ´ serem escritas e validadas Ã© que o segundo robÃ´ serÃ¡ ativado e poderÃ¡ execultar suas strings de comando.
 ## Como Usar
 ### Grid:
-O Usuário pode escolher (basicamente), qualquer valor para ambas as dimensões do grid, portanto, não é recomendado utilizar medidas mutios grandes, uma vez que a monitoração de certas propriedades da aplicação (movimento, limite do grid),
-caso o usuário declare o ponto de partida do robô fora dos paramêtros do grid, ou sua segunda string de comandos passe de algum limite, o usuário será colocado na última coordenada possível (ex. em um grid 5,5, um comando de lançamento 3,6,N teria resultado 3,5,N)
-o grid não pode ser mudado durante a expedição de nenhum dos dois robôs.
+O UsuÃ¡rio pode escolher (basicamente), qualquer valor para ambas as dimensÃµes do grid, portanto, nÃ£o Ã© recomendado utilizar medidas muitos grandes, uma vez que a monitoraÃ§Ã£o de certas propriedades da aplicaÃ§Ã£o (movimento, limite do grid) pode ser dificultada,
+caso o usuÃ¡rio declare o ponto de partida do robÃ´ fora dos paramÃªtros do grid, ou sua segunda string de comandos passe de algum limite, o usuÃ¡rio serÃ¡ colocado na Ãºltima coordenada possÃ­vel (ex. em um grid 5,5, um comando de lanÃ§amento 3,6,N teria resultado 3,5,N)
+o grid nÃ£o pode ser mudado durante a expediÃ§Ã£o de nenhum dos dois robÃ´s.
 ### Strings de Comando:
-Ao iniciar a expedição, o usuário terá de escrever uma string no formato (x,y,d), com x sendo a coordenada no eixo horizontal, y a coordenada do eixo vertical, e d sendo a direção em que o robô estara virado para com N sendo Norte, L sendo Leste, S sendo Sul e O sendo Oeste, é recomendado que o usuário apenas informe uma letra maiúscula para a direção, apesar dos nomes das direções e letras minúsculas também poderem ser utilizadas.
+Ao iniciar a expediÃ§Ã£o, o usuÃ¡rio terÃ¡ de escrever uma string no formato (x,y,d), com x sendo a coordenada no eixo horizontal, y a coordenada do eixo vertical, e d sendo a direÃ§Ã£o em que o robÃ´ estara virado para, com N sendo Norte, L sendo Leste, S sendo Sul e O sendo Oeste, Ã© recomendado que o usuÃ¡rio apenas informe uma letra maiÃºscula para a direÃ§Ã£o, apesar dos nomes inteiros das direÃ§Ãµes e letras minÃºsculas serem tambÃ©m convertidas para uso.
 
-Após o lançamento do robô, o Usuário terá de escrever uma nova string de comandos, agora podendo utilizar as letras "M","D" e "E" o comando M movimenta o robô um espaço para a direção que ele estiver olhando, já os comandos E e D viram o robô ou para a esquerda ou para a direita, respectivamente, sem se movimentar para outro espaço do grid no processo. Essa string de comando não possue um limite de instruções, portanto, assim como no grid, é importante não utilizar comandos muito grandes, como forma de inspecionar e certificar que o robôe está de fato seguindo suas ordems corretamente.
-## Créditos
+ApÃ³s o lanÃ§amento do robÃ´, o UsuÃ¡rio terÃ¡ de escrever uma nova string de comandos, agora utilizando as letras "M","D" e "E", o comando "M" movimenta o robÃ´ uma unidade de espaÃ§o para a direÃ§Ã£o que ele estiver olhando, jÃ¡ os comandos "E" e "D" viram o robÃ´ ou para a esquerda ou para a direita, respectivamente, sem se movimentar para outro espaÃ§o do grid no processo. Essa string de comando nÃ£o possue um limite de instruÃ§Ãµes, portanto, assim como no grid, Ã© importante nÃ£o utilizar comandos muito grandes, como forma de inspecionar e certificar que o robÃ´ estÃ¡ de fato seguindo suas ordems corretamente.
+## CrÃ©ditos
 Programa feito por Danilo Cenci (https://github.com/Davetheguy1)
 
-Agradecimentos à
+Agradecimentos Ã 
 
 Tiago Santini, da Academia do Programador (https://github.com/tiagosantini)
 
