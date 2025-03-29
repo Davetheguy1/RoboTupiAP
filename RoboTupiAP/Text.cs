@@ -31,7 +31,7 @@ namespace RoboTupiAP
         }
         
         
-        public static void robotText(int code)
+        public static void RobotText(int code)
         {
             if (code == 1)
             {
@@ -55,8 +55,8 @@ namespace RoboTupiAP
         public static void ShowInfo()
         {
             GridMaxValues();
-            robotText(1);
-            robotText(2);
+            RobotText(1);
+            RobotText(2);
         }
 
 
@@ -78,7 +78,10 @@ namespace RoboTupiAP
             Console.WriteLine("\nPrograma Finalizado, deseja reiniciar? (y/n)");
         }
 
-
+        public static void FatalError()
+        {
+            Console.WriteLine("Erro fatal. Valor Inicial Exede os parâmetros do grid, Pressione Enter para voltar ao menu.");
+        }
         public static void ExitMsg()
         {
             Console.WriteLine("Saindo do Programa...");

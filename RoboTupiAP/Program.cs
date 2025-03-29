@@ -27,6 +27,18 @@ namespace RoboTupiAP
         
         public static void GridInput()
         {
+            GridMovement.R1XValue = 0;
+            GridMovement.R1YValue = 0;
+            GridMovement.R1Direction = 'N';
+            GridMovement.R1Active = "Ativo";
+
+            GridMovement.R2XValue = 0;
+            GridMovement.R2YValue = 0;
+            GridMovement.R2Direction = 'N';
+            GridMovement.R2Active = "Inativo";
+
+
+
             Text.GridCreateMsg();
             string userInput = Console.ReadLine();
             string[] parts = userInput.Split(',');
@@ -50,6 +62,13 @@ namespace RoboTupiAP
             int XValue = int.Parse(parts[0]);
             int YValue = int.Parse(parts[1]);
             char direction = char.Parse(parts[2]);
+
+            if (XValue > GridMovement.globalXValue || YValue > GridMovement.globalYValue)
+            {
+                Text.FatalError();
+                Console.ReadLine();
+                MenuInput();
+            }
 
             if (code == 1)
             {
@@ -79,7 +98,7 @@ namespace RoboTupiAP
 
             if (enquire == "y")
             {
-                GridInput();
+                MenuInput();
 
             }
             else if (enquire == "n")
