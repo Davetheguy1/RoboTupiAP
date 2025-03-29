@@ -9,6 +9,7 @@ namespace RoboTupiAP
 {
     public class GridMovement
     {
+        // Valores Globais
         public static int globalXValue = 0;
         public static int globalYValue = 0;
         public static int RobotTurn = 1;
@@ -16,39 +17,50 @@ namespace RoboTupiAP
         // Robo 1:
         public static int R1XValue = 0;
         public static int R1YValue = 0;
-        public static string R1Direction = "N";
+        public static char R1Direction = 'N';
         public static string R1Active = "Ativo";
        
         // Robo 2:
         public static int R2XValue = 0;
         public static int R2YValue = 0;
-        public static string R2Direction = "N";
+        public static char R2Direction = 'N';
         public static string R2Active = "Inativo";
 
-        public static void ExpeditionGraph1(int code)
+        
+
+        public static void ExpeditionGraph(int code1, int code2)
 
         {
-            if (code == 1)
+            if (code1 == 1 && code2 == 1)
             {
-                Text.GridMaxValues();
-                Text.robotText(1);
-                Text.robotText(2);
-                Text.enquireString1();
+                Text.ShowInfo();
+                Text.EnquireString1();
                 Program.StringDecoder1(1);
-            } else if (code == 2)
-            {
-                Text.GridMaxValues();
-                Text.robotText(1);
-                Text.robotText(2);
-                Text.enquireString1();
-                Program.StringDecoder1(2);
-                //Text.enquireString2();
-                // Program.StringDecoder2(1);
             }
-        }     
-       
-        
-      
-       
+            else if (code1 == 2 && code2 == 1)
+            {
+                Text.ShowInfo();
+                Text.EnquireString1();
+                Program.StringDecoder1(2);
+            }
+            else if (code1 == 1 && code2 == 2)
+            {
+                Text.ShowInfo();
+                Text.EnquireString2();
+                SecondDecoder.StringDecoder2(1);
+            } else if (code1 == 2 && code2 == 2)
+            {
+                Text.ShowInfo();
+                Text.EnquireString2();
+                SecondDecoder.StringDecoder2(2);
+            }
+            else
+            {
+                Text.ShowInfo();
+                Program.Enquire();
+            }
+        }
+
+
     }
 }

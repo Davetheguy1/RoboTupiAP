@@ -19,6 +19,7 @@ namespace RoboTupiAP
 
         public static void GridCreateMsg()
         {
+            Console.Clear();
             Console.WriteLine("Insira O Tamanho do Grid (x,y)");
         }
         
@@ -51,16 +52,23 @@ namespace RoboTupiAP
             }
         }
 
-
-        public static void enquireString1()
+        public static void ShowInfo()
         {
-            Console.WriteLine("Insira a primeira String de Comando (x,y,direcão)");
+            GridMaxValues();
+            robotText(1);
+            robotText(2);
+        }
+
+
+        public static void EnquireString1()
+        {
+            Console.WriteLine("Insira uma String de Comando (x,y,direcão):");
 
         }
 
-        public static void enquireString2()
+        public static void EnquireString2()
         {
-            Console.WriteLine("Insira a Próxima String de Comando:\n");
+            Console.WriteLine("Insira a Próxima String de Comando (e,d,m,e,d,m...):");
         }
 
     
