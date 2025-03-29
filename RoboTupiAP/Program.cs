@@ -63,11 +63,16 @@ namespace RoboTupiAP
             int YValue = int.Parse(parts[1]);
             char direction = char.Parse(parts[2]);
 
-            if (XValue > GridMovement.globalXValue || YValue > GridMovement.globalYValue)
+            if (XValue > GridMovement.globalXValue)
             {
-                Text.FatalError();
+                Text.GridError();
                 Console.ReadLine();
-                MenuInput();
+                XValue = GridMovement.globalXValue;
+            } else if (YValue > GridMovement.globalYValue)
+            {
+                Text.GridError();
+                Console.ReadLine();
+                YValue = GridMovement.globalYValue;
             }
 
             if (code == 1)
@@ -75,14 +80,15 @@ namespace RoboTupiAP
                 GridMovement.R1XValue = XValue;
                 GridMovement.R1YValue = YValue;
                 GridMovement.R1Direction = direction;
-                GridMovement.ExpeditionGraph(1,2);
+                GridMovement.ExpeditionGraph(1, 2);
 
-            } else if (code == 2)
+            }
+            else if (code == 2)
             {
                 GridMovement.R2XValue = XValue;
                 GridMovement.R2YValue = YValue;
                 GridMovement.R2Direction = direction;
-                GridMovement.ExpeditionGraph(2,2);
+                GridMovement.ExpeditionGraph(2, 2);
 
             }
 

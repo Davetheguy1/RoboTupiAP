@@ -78,9 +78,9 @@ namespace RoboTupiAP
             Console.WriteLine("\nPrograma Finalizado, deseja reiniciar? (y/n)");
         }
 
-        public static void FatalError()
+        public static void GridError()
         {
-            Console.WriteLine("Erro fatal. Valor Inicial Exede os parâmetros do grid, Pressione Enter para voltar ao menu.");
+            Console.WriteLine("Erro. Valor Inicial Exede um o mais parâmetros do grid, posição ajustada automaticamente. Pressione Enter para Continuar.");
         }
         public static void ExitMsg()
         {
