@@ -1,6 +1,6 @@
 # RoboTupiAP
 ## Descrição
-Uma simulação em que o usuário pode movimentar dois robôs em um grid determinado pelo usuário, feito para a Academia do Programador.
+Uma simulação em que o usuário pode movimentar dois robôs em um grid determinado pelo próprio usuário, feito para a Academia do Programador.
 ## Funcionalidade
 Após a determinação do grid, o usuário poderá "soltar" o primeiro robô em uma posição específica (consultar na aba "Como Usar") com uma string de comandos, após isso, ele poderá utilizar-se de outra string de comando para execultar uma série de outros movimentos dentro do plano(consultar na aba "Como Usar"). A Utilização dos robôs ocorre de forma sequencial, ou seja, apenas após as duas strings de comandos do primeiro robô serem escritas e validadas é que o segundo robô será ativado e poderá execultar suas strings de comando.
 ## Como Usar
