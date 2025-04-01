@@ -12,7 +12,6 @@ namespace RoboTupiAP
         // Valores Globais
         public static int globalXValue = 0;
         public static int globalYValue = 0;
-        public static int RobotTurn = 1;
        
         // Robo 1:
         public static int R1XValue = 0;
